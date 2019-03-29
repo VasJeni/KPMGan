@@ -1,0 +1,140 @@
+.kpmg--progress {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    margin: auto auto;
+}
+
+.kpmg--progress-wrapper {
+    background: #0072bc;
+    overflow: hidden;
+}
+
+.kpmg--progress__text {
+    font-size: 14px;
+    text-align: center;
+    margin: auto auto;
+}
+
+.kpmg--progress__scale {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 250px;
+    margin-bottom: 30px;
+}
+
+.kpmg--progress__stage {
+    text-align: center;
+}
+
+.kpmg--progress__stage-circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: #ffffff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.kpmg--progress__stage-circle:before {
+    display: block;
+    content: '';
+    height: 1px;
+    border-top: 1px dashed #ffffff;
+    top: 50%;
+    z-index: 2;
+    position: absolute;
+    left: -10000000%;
+    right: -10000000%;
+}
+
+.kpmg--progress__stage-circle-text {
+    text-align: center;
+}
+
+.kpmg--progress__stage-active {
+    z-index: 100;
+    position: relative;
+    background: #1b5eaa;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.kpmg--progress__stage-active > * {
+    margin: auto auto;
+    font-size: 12px;
+    text-align: center;
+}
+
+.kpmg--progress__stage-active p {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.kpmg--progress__stage-active svg {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.kpmg--progress__stage-text {
+    margin: 10px auto;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.kpmg--progress__scroll p {
+    text-align: center;
+}
+
+.kpmg--progress__scroll p button {
+    background: inherit;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    padding: 8px 9px 10px 10px;
+    margin: 0 10px;
+    color: #ffffff;
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+@media (max-width: 566px) {
+    .kpmg--progress__scale {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 30px;
+    }
+    .kpmg--progress__stage {
+        margin: 20px auto;
+    }
+    .kpmg--progress__stage-active {
+        -moz-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}

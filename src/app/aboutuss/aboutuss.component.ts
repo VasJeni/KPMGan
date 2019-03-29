@@ -5,10 +5,11 @@ import { User } from '@/_models';
 import { UserService, AuthenticationService } from '@/_services';
 
 @Component({
-    templateUrl: 'home.component.html',
-    styleUrls: ['home.component.css']
+    templateUrl: 'aboutuss.component.html',
+    styleUrls: ['aboutuss.component.css'],
+    selector: 'aboutuss-comp'
 })
-export class HomeComponent {
+export class AboutussComponent {
     currentUser: User;
     userFromApi: User;
 

@@ -5,10 +5,11 @@ import { User } from '@/_models';
 import { UserService, AuthenticationService } from '@/_services';
 
 @Component({
-    templateUrl: 'home.component.html',
-    styleUrls: ['home.component.css']
+    templateUrl: 'progress.component.html',
+    styleUrls: ['progress.component.css'],
+    selector: 'progress-comp'
 })
-export class HomeComponent {
+export class ProgressComponent {
     currentUser: User;
     userFromApi: User;
 
