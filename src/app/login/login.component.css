@@ -1,0 +1,36 @@
+.kmpg--form__hack {
+    margin: 20px auto;
+    background: #fadbad;
+    border-radius: 10px;
+}
+.kmpg--form--wrapper {
+    margin: auto auto;
+    background: #45b6a8;
+    border-radius: 5px;
+}
+.kmpg--form__grop {
+
+}
+.kmpg--form--wrapper h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #171749
+}
+.kmpg--form__grop label {
+    color: #171749;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.kmpg--form__grop input{
+    margin: auto auto;
+    width: 100%;
+ }
+.kmpg--form__button button{
+    margin: 20px auto;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
