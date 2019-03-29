@@ -4,4 +4,4 @@
 4. Start the application by running npm start from the command line in the project root folder.
 5. Your browser should automatically open at http://localhost:8080 with the demo.
 
-
+As you have entered the app like admin, then on the navigation panel, add a paragraph admin.
