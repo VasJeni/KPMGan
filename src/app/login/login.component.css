@@ -22,6 +22,8 @@
     text-align: center;
     display: block;
     width: 100%;
+    margin: 20px auto 5px
+
 }
 .kmpg--form__grop input{
     margin: auto auto;
