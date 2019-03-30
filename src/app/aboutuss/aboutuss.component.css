@@ -1,3 +1,164 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local("Segoe UI Light");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local("Segoe UI Semilight");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local("Segoe UI");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local("Segoe UI Semibold");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2") format("woff2"), url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2") format("woff2"), url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2") format("woff2"), url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2") format("woff2"), url("https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+._section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1c8ece;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #3697d1;
+}
+
+body {
+    font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
+    font-weight: 400;
+    background: black;
+}
+
+a:focus,
+a:hover,
+a:active,
+a:focus-within {
+    border: none;
+    outline: none;
+}
+
+select:focus,
+select:hover,
+select:active,
+select:focus-within {
+    border: none;
+    outline: red;
+}
+
+option:focus,
+option:hover,
+option:active,
+option:focus-within {
+    border: none;
+    outline: red;
+}
+
+*:focus {
+    outline: none;
+}
+.kpmg--about {
+    margin: auto auto;
+}
 
 .kpmg--about__wrapper {
     background: #e8f4fa;
@@ -54,6 +215,7 @@
     flex-direction: row;
     color: #223b7e;
     text-align: center;
+    justify-content: space-around;
 }
 
 .kpmg--about__item p {
@@ -80,6 +242,175 @@
     }
 }
 @media (max-width: 566px) {
+    .kpmg--about__items {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+    .kpmg--logo {
+        order: 3;
+    }
+    .kpmg--header {
+        -webkit-flex-wrap: wrap-reverse;
+        -moz-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .kpmg--header__title {
+        order: 4;
+    }
+    .kpmg--header-btn {
+        order: 5;
+    }
+    .kpmg--header__nav {
+        order: 2;
+    }
+    .kpmg--header__select {
+        order: 1;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 992px) {
+    .kpmg--logo {
+        order: 3;
+    }
+    .kpmg--header {
+        -webkit-flex-wrap: wrap-reverse;
+        -moz-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .kpmg--header__title {
+        order: 4;
+    }
+    .kpmg--header-btn {
+        order: 5;
+    }
+    .kpmg--header__nav {
+        order: 2;
+    }
+    .kpmg--header__select {
+        order: 1;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .kpmg--logo {
+        order: 4;
+    }
+    .kpmg--header {
+        -webkit-flex-wrap: wrap-reverse;
+        -moz-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .kpmg--header__title {
+        order: 5;
+    }
+    .kpmg--header-btn {
+        order: 3;
+    }
+    .kpmg--header__nav {
+        order: 2;
+    }
+    .kpmg--header__select {
+        order: 1;
+    }
+    .kpmg--header__select__wrapper:before {
+        right: -20px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 567px) {
+    .kpmg--logo {
+        order: 6;
+    }
+    .kpmg--header {
+        -webkit-flex-wrap: wrap-reverse;
+        -moz-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .kpmg--header__title {
+        order: 5;
+    }
+    .kpmg--header-btn {
+        order: 3;
+    }
+    .kpmg--header__nav {
+        order: 2;
+    }
+    .kpmg--header__select {
+        order: 1;
+    }
+    .kpmg--header__select__wrapper:before {
+        right: -2rem;
+    }
+    .kpmg--offer__title h3 {
+        font-size: 2rem;
+    }
+    .kpmg--about__items {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .kpmg--offer__title {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 566px) {
+    .kpmg--logo {
+        order: 6;
+        margin: auto auto;
+    }
+    .kpmg--header {
+        -webkit-flex-wrap: wrap-reverse;
+        -moz-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .kpmg--header__title {
+        order: 5;
+    }
+    .kpmg--header-btn {
+        order: 3;
+    }
+    .kpmg--header__nav {
+        order: 2;
+    }
+    .kpmg--header__select {
+        order: 1;
+    }
+    .kpmg--header__select__wrapper:before {
+        right: -3em;
+    }
+    .kpmg--progress__scale {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 30px;
+    }
+    .kpmg--progress__stage {
+        margin: 20px auto;
+    }
+    .kpmg--progress__stage-active {
+        -moz-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .kpmg--offer__title {
+        margin: 10px auto;
+    }
     .kpmg--about__items {
         -webkit-flex-wrap: wrap;
         -moz-flex-wrap: wrap;
