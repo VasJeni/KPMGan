@@ -126,7 +126,6 @@ a {
 body {
     font-family: 'Segoe UI Local', 'Segoe UI Web (West European)', sans-serif;
     font-weight: 400;
-    background: black;
 }
 
 a:focus,
@@ -291,6 +290,8 @@ option:focus-within {
     background: #ffffff;
     padding-top: 40px;
     padding-bottom: 25px;
+    font-family: "Segoe UI Local", "Segoe UI Web (West European)", sans-serif;
+
 }
 
 .kpmg--footer__mail {

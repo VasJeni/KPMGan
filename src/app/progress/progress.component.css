@@ -8,6 +8,7 @@
 .kpmg--progress-wrapper {
     background: #0072bc;
     overflow: hidden;
+    font-family: "Segoe UI Local", "Segoe UI Web (West European)", sans-serif;
 }
 
 .kpmg--progress__text {
